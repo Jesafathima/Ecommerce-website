@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> E-Com</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container-2">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"></a><img src="Images/Logo.png" width="85px" ></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="product.html">Products</a></li>
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">Contact</a></li>
+                    <li> <a href="Account.html">Account</a></li>
+                    <li> <a href="cart.html">Cart </a></li>
+                </ul>
+            </nav>
+            <img src="Images/menu.png" class="menuicon" onclick="menutoggle()">
+        </div>  
+        </div>
+        <hr>  
+        <!-------------------------Product details-------------------------------------------->
+        <div class="Productdetails">
+            <div class="small-container singleproduct">
+                <div class="row">
+                    <div class="smallimg">
+                        <div class="smallimgrow">
+                            <img src="Images/pic5.jpg" class="smallimage" >
+                        </div>
+                        <div class="smallimgrow">
+                            <img src="Images/pic5-1.jpg" class="smallimage">
+                        </div>
+                        <div class="smallimgrow">
+                            <img src="Images/pic5-2.jpg" class="smallimage" >
+                        </div>
+                        <div class="smallimgrow">
+                            <img src="Images/pic5-3.jpg" class="smallimage" >
+                        </div>
+                    </div>
+                    <div class="mainimage">
+                        <img src="Images/pic5.jpg" id="BigImage" >
+                    </div>
+                    <div class="col-2">
+                        <h2>Crew Neck Abaya Muslim Women Dress</h2> <br>
+                        <h1>Rs.4000</h1> <br>
+                        <p>Size</p>
+                        <select >
+                            <option> Select</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XLL</option>
+                        </select><br>
+                        <input type="number" value="1">
+                        <a href="http://" class="button"> Add to Cart</a>
+                        <h3>Product Specifications</h3>
+                        <P>Model Number :  SLM005 <br>
+                            Age Group :  Adults <br>
+                            Dress Type :  Evening / Formal Dresses<br>
+                            Pattern Type :  Solid<br>
+                            Sleeve Style :  Regular<br>
+                            Neckline :  O-Neck<br>
+                            Train :  None<br>
+                            Fashion Element :  simple<br>
+                            Decoration :  Tiered<br>
+                            Product Name :  Crew Neck Abaya Women Muslim Dress<br>
+                            Keywords :  Maxi Dress Ladies Muslim<br>
+                            Design :  Crew neck dress<br>
+                            MOQ : 1 pcs<br>
+                            Suitable season :  Four Seasons<br>
+                            Quality : 100% High<br>
+                            Delivery :  7-15 Days<br>
+                            Sample :  Customized Samples Accepted<br>
+                            Payment :  Paypal.Western Union.TT.Trade Assurance<br>
+                            SHIPPING :  DHL\UPS\FEDEX\by Sea\by Air<br>
+                            Selling Units :	Single item<br>
+                            Single package size :	30X20X3 cm<br>
+                            Single gross weight :	0.500 kg<br>
+                        </P>
+                    </div>
+                </div>
+                <div class="alsoview">
+                    <h2>People also viewed </h2>
+                    <p class="viewmore">view more</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Images/Featured top.webp" >
+                            <h4>Fancy modern women top</h4>
+                            <p>Rs.2500</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="Images/featured makeup.webp"  >
+                            <h4>Shiney Lip gloss</h4>
+                            <p>Rs.550</p>
+                            
+                        </div>
+                        <div class="col-4">
+                            <img src="Images/Featured skirt.jpg" > 
+                            <h4>Pleated Skirt</h4>
+                            <p>Rs.2500</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="Images/featured acc.jpg"  >
+                            <h4>Modern Necklace</h4>
+                            <p>Rs.800</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+        <br>
+        
+        <!------------------------------footer--------------------------->
+        <div class="footer">
+            <div class="anothercontainer">
+                <div class="row">
+                    <div class="fcol-1">
+                        <h3>Download our app</h3>
+                        <p>download App for Android and ios mobail phones</p>
+                        <div class="applogo">
+                            <img src="Images/playstore.png"  class="p1">
+                            <img src="Images/applestore.png"  class="p2">
+                        </div>
+                        
+                    </div>
+                    <div class="fcol-2">
+                        <img src="Images/Logo.png" width="85px" >
+                        <p>Our Purpose is to Sustainability Make pleasure and benefits of things</p>
+                    </div>
+                    <div class="fcol-3">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>facebook</li>
+                            <li>instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> &#169; Copyright 2024 - JA Fashion</p>
+        </div>
+        <!-------------------------js for toggle menu-------------------------------------->
+        <script>
+            var MenuItems= document.getElementById("MenuItems");
+            MenuItems.style.maxHeight=" 0px";
+
+            function menutoggle(){
+                if (MenuItems.style.maxHeight == "0px") 
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+        <script>
+            var BigImage=document.getElementById("BigImage");
+            var smallimage= document.getElementsByClassName("smallimage");
+            smallimage[0].onclick =function()
+            {
+                BigImage.src= smallimage[0].src;
+            }
+            smallimage[1].onclick =function()
+            {
+                BigImage.src= smallimage[1].src;
+            }
+            smallimage[2].onclick =function()
+            {
+                BigImage.src= smallimage[2].src;
+            }
+            smallimage[3].onclick =function()
+            {
+                BigImage.src= smallimage[3].src;
+            }
+        </script>
+    </body>
+</html>
